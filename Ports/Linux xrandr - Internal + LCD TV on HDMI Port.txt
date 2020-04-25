@@ -1,0 +1,128 @@
+Screen 0: minimum 8 x 8, current 5120 x 1800, maximum 16384 x 16384
+VGA-0 disconnected (normal left inverted right x axis y axis)
+	CscMatrix: 65536 0 0 0 0 65536 0 0 0 0 65536 0 
+	BorderDimensions: 4 
+		supported: 4
+	Border: 0 0 0 0 
+		range: (0, 65535)
+	SignalFormat: VGA 
+		supported: VGA
+	ConnectorType: VGA 
+	ConnectorNumber: 9 
+	_ConnectorLocation: 9 
+DP-0 connected 1920x1080+3200+0 (normal left inverted right x axis y axis) 708mm x 398mm
+	CscMatrix: 65536 0 0 0 0 65536 0 0 0 0 65536 0 
+	EDID: 
+		00ffffffffffff0058b3003700000000
+		011a0103804628780a6837a454489a25
+		0f4a4c2fcf0081800101010101010101
+		010101010101023a80d072382d40102c
+		4580c48e2100001e662150b051001b30
+		40703600c28e2100001e000000fc0033
+		32575f4c43445f54560a2020000000fd
+		00314c0f500f000a2020202020200128
+		02032e70520102850611141503071216
+		1f101304202122290907071507505706
+		008301000068030c002000801e008c0a
+		d090204031200c405500138e21000018
+		0e1f008051001e3040803700988e2100
+		001ca91a00a05000163030203700988e
+		2100001af12700a05100253050803700
+		988e2100001c00000000000000000035
+	BorderDimensions: 4 
+		supported: 4
+	Border: 0 0 0 0 
+		range: (0, 65535)
+	SignalFormat: TMDS 
+		supported: TMDS
+	ConnectorType: DisplayPort 
+	ConnectorNumber: 7 
+	_ConnectorLocation: 7 
+   1920x1080     50.00*+  59.94    29.97    25.00    23.98    60.00    50.04  
+   1360x768      60.02  
+   1280x1024     75.02    60.02  
+   1280x768      74.89    59.99    59.87  
+   1280x720      59.94    50.00  
+   1024x768      75.03    70.07    60.00  
+   800x600       75.00    72.19    60.32    56.25  
+   720x576       50.00  
+   720x480       59.94  
+   640x480       75.00    72.81    59.94    59.93  
+DP-1 disconnected (normal left inverted right x axis y axis)
+	CscMatrix: 65536 0 0 0 0 65536 0 0 0 0 65536 0 
+	BorderDimensions: 4 
+		supported: 4
+	Border: 0 0 0 0 
+		range: (0, 65535)
+	SignalFormat: TMDS 
+		supported: TMDS
+	ConnectorType: DisplayPort 
+	ConnectorNumber: 4 
+	_ConnectorLocation: 4 
+DP-2 disconnected (normal left inverted right x axis y axis)
+	CscMatrix: 65536 0 0 0 0 65536 0 0 0 0 65536 0 
+	BorderDimensions: 4 
+		supported: 4
+	Border: 0 0 0 0 
+		range: (0, 65535)
+	SignalFormat: TMDS 
+		supported: TMDS
+	ConnectorType: DisplayPort 
+	ConnectorNumber: 5 
+	_ConnectorLocation: 5 
+DP-3 disconnected (normal left inverted right x axis y axis)
+	CscMatrix: 65536 0 0 0 0 65536 0 0 0 0 65536 0 
+	BorderDimensions: 4 
+		supported: 4
+	Border: 0 0 0 0 
+		range: (0, 65535)
+	SignalFormat: DisplayPort 
+		supported: DisplayPort
+	ConnectorType: DisplayPort 
+	ConnectorNumber: 7 
+	_ConnectorLocation: 7 
+DP-4 connected primary 3200x1800+0+0 (normal left inverted right x axis y axis) 346mm x 194mm
+	CscMatrix: 65536 0 0 0 0 65536 0 0 0 0 65536 0 
+	Backlight: 100 
+		range: (0, 100)
+	EDID: 
+		00ffffffffffff004d10f91300000000
+		1b170104a52313780ede50a3544c9926
+		0f505400000001010101010101010101
+		010101010101cd9180a0c00834703020
+		35005ac2100000180000001000000000
+		00000000000000000000000000fe004a
+		4a373448804c513135365a3100000000
+		0002410328001200000b010a202000f0
+	BorderDimensions: 4 
+		supported: 4
+	Border: 0 0 0 0 
+		range: (0, 65535)
+	SignalFormat: DisplayPort 
+		supported: DisplayPort
+	ConnectorType: Panel 
+	ConnectorNumber: 8 
+	_ConnectorLocation: 8 
+   3200x1800     59.98*+
+DP-5 disconnected (normal left inverted right x axis y axis)
+	CscMatrix: 65536 0 0 0 0 65536 0 0 0 0 65536 0 
+	BorderDimensions: 4 
+		supported: 4
+	Border: 0 0 0 0 
+		range: (0, 65535)
+	SignalFormat: DisplayPort 
+		supported: DisplayPort
+	ConnectorType: DisplayPort 
+	ConnectorNumber: 4 
+	_ConnectorLocation: 4 
+DP-6 disconnected (normal left inverted right x axis y axis)
+	CscMatrix: 65536 0 0 0 0 65536 0 0 0 0 65536 0 
+	BorderDimensions: 4 
+		supported: 4
+	Border: 0 0 0 0 
+		range: (0, 65535)
+	SignalFormat: DisplayPort 
+		supported: DisplayPort
+	ConnectorType: DisplayPort 
+	ConnectorNumber: 5 
+	_ConnectorLocation: 5 

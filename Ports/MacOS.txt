@@ -1,0 +1,3 @@
+When booted with LCD TV on HDMI Port:  07 00 00 00 under the Display-D parent.
+
+When booted with LCD TV on DisplayPort to HDMI converter attached to the DisplayPort Port: 04 00 00 00 under the Display-B parent.

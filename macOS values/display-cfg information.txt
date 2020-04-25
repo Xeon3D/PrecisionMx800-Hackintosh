@@ -1,0 +1,38 @@
+First about display-cfg. It describes what type of screen is attached.
+
+The last two bytes are made up as following:
+
+If some condition (unknown yet, we thought it had to do with if a screen is attached to that output, which it had not) is met we get:
+
+BYTE: Display-Number
+BYTE: I2C Read Offset
+BYTE: 0xFF
+BYTE: 0xFF
+
+If the unknown condition above is not met its build up as following regarding the type of screen attached.
+
+For ANALOG:
+
+BYTE: Display-Number
+BYTE: I2C Read Offset
+BYTE: 0xFF
+BYTE: 0x00
+
+For TV:
+
+BYTE: Display-Number
+BYTE: I2C Read Offset
+BYTE: 0xFF
+BYTE: 0x01
+
+And for everything else like LVDS, TMDS and Display-Port
+
+BYTE: Display-Number
+BYTE: I2C Read Offset
+BYTE: DCB Entry OR (guessing)
+BYTE: 0x03
+
+There is one display-cfg for each screen. Here an example (note we have to swap bytes to inject):
+
+@0,display-cfg <03YYXX00>  XX = I2C Read Offset; YY = DCB ENTRY OR VALUE (guessing)
+@1,display-cfg <03YYXX01>  XX = I2C Read Offset; YY = DCB ENTRY OR VALUE (guessing)

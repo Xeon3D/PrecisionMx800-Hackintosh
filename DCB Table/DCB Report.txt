@@ -1,0 +1,84 @@
+DCB table at 0x5ad6 version 4.0 unk16 0x01
+DCB 3: type 6 [DP] I2C 13 heads 0 1 2 3 CONN 5 [0x46] conntag 1 LOCAL OR 3 links 1 BW UNK2 lanes 0 1 2 3
+DCB 4: type 2 [TMDS] I2C 9 heads 0 1 2 3 CONN 5 [0x46] conntag 1 LOCAL OR 3 links 1 HDMI
+DCB 5: type 6 [DP] I2C 12 heads 0 1 2 3 CONN 4 [0x46] conntag 1 LOCAL OR 3 links 0 BW UNK2 lanes 0 1 2 3
+DCB 6: type 2 [TMDS] I2C 8 heads 0 1 2 3 CONN 4 [0x46] conntag 1 LOCAL OR 3 links 0 HDMI
+DCB 8: type 6 [DP] I2C 11 heads 0 1 2 3 CONN 8 [0x47] conntag 3 LOCAL OR 2 links 0 BW UNK2 lanes 0 1 2 3 unk04 0x04 unk06 0x01
+DCB 10: type 6 [DP] I2C 10 heads 0 1 2 3 CONN 7 [0x46] conntag 2 LOCAL OR 1 links 0 BW UNK2 lanes 0 1 2 3
+DCB 11: type 2 [TMDS] I2C 6 heads 0 1 2 3 CONN 7 [0x46] conntag 2 LOCAL OR 1 links 0 HDMI
+DCB 13: type 0 [ANALOG] I2C 0 heads 0 1 2 3 CONN 9 [0x00] conntag 4 LOCAL OR 1
+
+I2C table at 0x5b71 version 4.0 defaults 2 5
+I2C 0: type 0x05 [PNVIO] loc 0 unk00_4 1
+I2C 1: type 0x05 [PNVIO] loc 1 unk00_4 1
+I2C 2: type 0x05 [PNVIO] loc 2 unk00_4 1
+I2C 5: type 0x05 [PNVIO] loc 5 unk00_4 1
+I2C 6: type 0x05 [PNVIO] loc 6 unk00_4 1 shared 0
+I2C 7: type 0x05 [PNVIO] loc 7 unk00_4 1 shared 1
+I2C 8: type 0x05 [PNVIO] loc 8 unk00_4 1 shared 2
+I2C 9: type 0x05 [PNVIO] loc 9 unk00_4 1 shared 3
+I2C 10: type 0x06 [AUXCH] loc 0 shared 6
+I2C 11: type 0x06 [AUXCH] loc 1 shared 7
+I2C 12: type 0x06 [AUXCH] loc 2 shared 8
+I2C 13: type 0x06 [AUXCH] loc 3 shared 9
+
+GPIO table at 0x5bb2 version 4.1
+GPIO 0: line 0 tag 0x6c [MXM_PIN_26] OUT DEF 1 gpio: normal
+GPIO 1: line 1 tag 0x6d [MXM_PIN_28] OUT DEF 1 gpio: normal
+GPIO 2: line 2 tag 0x21 [PANEL_BACKLIGHT_LEVEL] OUT DEF 0 HW gpio: normal SPEC_OUT 0x80 [SOR0_PANEL_BACKLIGHT_LEVEL]
+GPIO 3: line 3 tag 0x01 [PANEL_POWER] OUT DEF 0 gpio: normal SPEC_OUT 0x81 [SOR0_PANEL_POWER]
+GPIO 4: line 4 tag 0x00 [PANEL_BACKLIGHT_ON] OUT DEF 0 gpio: normal SPEC_OUT 0x82 [SOR0_PANEL_BACKLIGHT_ON]
+GPIO 6: line 6 tag 0x6e [MXM_PIN_30] OUT DEF 0 gpio: normal
+GPIO 7: line 7 tag 0x0f [STEREO_TOGGLE] OUT DEF 0 gpio: normal SPEC_OUT 0x4b [STEREO_3] lockpin 3
+GPIO 8: line 8 tag 0x23 [THERM_SHUTDOWN] OUT NEG DEF 0 gpio: normal SPEC_OUT 0x58 [NVIO_THERM_SHUTDOWN] SPEC_IN 0x14 [THERMAL_OVERTEMP]
+GPIO 9: line 9 tag 0x49 [THERM_ALERT_OUT] OUT NEG DEF 0 gpio: normal SPEC_OUT 0x59 [FAN_ALERT]
+GPIO 10: line 10 tag 0x2e [MEM_VREF] OUT NEG DEF 1 gpio: normal
+GPIO 11: line 11 tag 0x81 [VID_PWM0] OUT DEF 0 param 1 gpio: normal SPEC_OUT 0x5d [PWM_1]
+GPIO 12: line 12 tag 0x2b [HW_SLOWDOWN_ENABLE] IN NEG DEF 0 gpio: normal SPEC_IN 0x16 [POWER_ALERT]
+GPIO 14: line 14 tag 0x07 [HPD_0] IN DEF 0 gpio: normal
+GPIO 15: line 15 tag 0x51 [HPD_2] IN DEF 0 gpio: normal SPEC_IN 0x00 [AUXCH_HPD_0]
+GPIO 17: line 17 tag 0x52 [HPD_3] IN DEF 0 gpio: normal SPEC_IN 0x01 [AUXCH_HPD_1]
+GPIO 18: line 18 tag 0x5e [HPD_4] IN DEF 0 gpio: normal SPEC_IN 0x02 [AUXCH_HPD_2]
+GPIO 19: line 19 tag 0x5f [HPD_5] IN DEF 0 gpio: normal SPEC_IN 0x03 [AUXCH_HPD_3]
+
+XPIODIR table at 0x5c58 version 4.0, 3 subtables
+
+XPIO table 0 at 0x5c62 version 4.0 type 0x00 [UNUSED] at 0x00 defbus 0
+
+XPIO table 1 at 0x5cb9 version 4.0 type 0x00 [UNUSED] at 0x00 defbus 0
+
+XPIO table 2 at 0x5cd4 version 4.0 type 0x00 [UNUSED] at 0x00 defbus 0
+
+SPREADSPECTRUM table at 0x5cef version 4.1 unk04 0x00
+SPREADSPECTRUM 0: idx(0) SRC_PLL SPREAD(0.50%) CENTER
+SPREADSPECTRUM 1: INVALID 0x00 0x00
+SPREADSPECTRUM 2: INVALID 0x00 0x00
+SPREADSPECTRUM 3: INVALID 0x00 0x00
+
+EXTDEV table at 0x5cfc version 4.0 unk04 0x00
+EXTDEV 2: type 0x02 [MAX6649] at 0x98 defbus 0
+
+CONN table at 0x5d2d version 4.0
+CONN 0: type 0x40 [LVDS] tag 0
+CONN 4: type 0x46 [DP] tag 4 HPD_4
+CONN 5: type 0x46 [DP] tag 5 HPD_5
+CONN 7: type 0x46 [DP] tag 7 HPD_2
+CONN 8: type 0x47 [EDP] tag 8 HPD_3
+CONN 9: type 0x00 [VGA] tag 9
+
+MUX table at 0x5d72 version 1.0
+MUX 0: DCB 0
+MUX 1: DCB 1
+MUX 2: DCB 2
+MUX 3: DCB 3
+MUX 4: DCB 4
+MUX 5: DCB 5
+MUX 6: DCB 6
+MUX 7: DCB 7
+MUX 8: DCB 8
+MUX 9: DCB 9
+MUX 10: DCB 10
+MUX 11: DCB 11
+MUX 12: DCB 12
+MUX 13: DCB 13
+

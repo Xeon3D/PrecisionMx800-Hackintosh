@@ -1,0 +1,24 @@
+Windows: nVidia Control Panel - System Topology
+
+VGA: "Not Connected"
+Laptop Display: "Connected"
+DisplayPort 3: "Not Connected"
+DisplayPort 2: "Not Connected"
+DisplayPort 1: "Not Connected"
+
+With a DP to HDMI connector connected on the physical HDMI port.
+
+VGA: "Not Connected"
+Laptop Display: "Connected"
+DisplayPort 3: "Not Connected"
+DisplayPort 2: "Not Connected"
+DisplayPort 1: Changes to "HDMI: Connected"
+
+With the external screen connected on the physical HDMI port.
+
+VGA: "Not Connected"
+Laptop Display: "Connected"
+DisplayPort 3: Changes to "HDMI: Connected"
+DisplayPort 2: "Not Connected"
+DisplayPort 1: "Not Connected"
+

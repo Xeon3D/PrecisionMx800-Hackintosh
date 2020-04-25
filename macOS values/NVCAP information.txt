@@ -1,0 +1,17 @@
+BYTE: NVCAP_VERSION (hardcoded, goes from 0 to 5)
+BYTE: HAS_CLAM_SHELL (lid)
+BYTE: UNKNOWN (most built-in cards and MacPro 7300GT have that set to 1)
+BYTE: UNKNOWN (most built-in cards have that set to 1. something about backlight?)
+WORD: OUTPUT GROUP 3 (guessing, it describes what outputs are usable together with S-Video out)
+WORD: OUTPUT GROUP 1 (describes what outputs are grouped to Display-A)
+WORD: OUTPUT GROUP 2 (describes what outputs are grouped to Display-B)
+BYTE:
+BYTE:
+BYTE:
+BYTE:
+BYTE: BUILT-IN (guessing, built-in cards apart from 7300GO (AppleTV) have this set to 1)
+BYTE: UNKNOWN (hardcoded value)
+BYTE: EDID_MANUFACTURER_RESERVED_TIMINGS (BYTE 0x25 of the primary screens EDID)
+BYTE:
+BYTE:
+BYTE: UNKNOWN (MacBookPro 8600MGT (15") 128MB Vram has this set to 1)

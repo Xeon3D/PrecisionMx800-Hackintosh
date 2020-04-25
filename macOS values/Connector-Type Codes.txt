@@ -1,0 +1,8 @@
+Connector Type Hex Codes:
+
+"<00080000>":"HDMI" - AAgAAA==
+"<00020000>":"DVI" - AAIAAA==
+"<00040000>":"DisplayPort" - AAQAAA==
+"<01000000>":"Dummy Port" - AQAAAA==
+"<02000000>":"LVDS" - AgAAAA==
+"<04000000>": eDP - BAAAAA==
