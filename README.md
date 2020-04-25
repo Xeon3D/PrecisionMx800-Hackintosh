@@ -11,7 +11,7 @@ While this was started with the idea of being M4800-only, it's bigger brother sh
 Specs rundown:
 
 - 15.6" (M4800) or 17" (M6800)
-- Motherboard models: W7R2C/THP1N/T3YTY (LVDS) & C3V2K/8KWV8/WNW0H (eDP)
+- Motherboard models: W7R2C/THP1N/T3YTY (LVDS) & C3V2K/8KWV8/WNW0H/77KCT (eDP)
 - 5th Generation Core i5 or i7 CPU (Not soldered, hence upgradeable)
 - Up to 32GB of DDR3L RAM
 - Intel (*) HD 4000 Series iGPU + nVidia Quadro / AMD FirePro dGPU (Upgradeable MXM Type A on M4800 and Type B on M6800)
@@ -25,6 +25,8 @@ Dell has released the M4800 with six (!) different motherboard revisions and thr
 As you've probably noticed, there are 3 variants of LVDS and eDP motherboards each. All the LVDS motherboards are very hackintosh-friendly and there are many instructions and success cases online, but their maximum resolution for the internal display is capped at 1920x1080. On the contrary, the eDP versions can go from Full HD to Ultra HD (aka 4K). Note that there's also a QHD+ screen available with a resolution of 3200x1200. 
 
 Also, according to Dell, the iGPU is not capable of driving a QHD+ or UHD panel, so if you get a laptop with the QHD+ screen (like me) or the UHD screen, the iGPU will be disabled hardware-wise and you will run into trouble since macOS doesn't detect the internal eDP port and as such no image on the internal screen will show (unless you boot with nv_disable=1). Testing hasn't been done by me on any other model as this is the only one I have.
+
+Also, this isn't the only laptop with a Discrete GPU only (no iGPU), other examples are the ASUS ROG G750 (which was solved [here](https://www.insanelymac.com/forum/topic/293967-solved-asus-rog-laptops-with-kepler-cards-not-detecting-dp-2-connected-lcd-display/)). I believe that the Asus G75VW, HP Zbook G1/G2 and the Dell Inspiron SE 7720 suffer from the same issue.
 
 So if you own one of these and want to help, PR's are welcome. If you don't own one of these but you think you may be able to help, I believe we're needing someone who actually understands DSDTs and the innards of nVidia kexts under macOS.
 

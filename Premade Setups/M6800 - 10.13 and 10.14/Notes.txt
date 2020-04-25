@@ -1,0 +1,70 @@
+This instructions is for Dell Presision m6800 
+
+
+Before you start Please note that :
+
+I am using Dell Presision m6800 with these SPEC
+
+        Intel I7 4900MQ - Intel HD Haswell 4600
+        32 GB RAM 
+        Nvidia Quadro K3100M 
+        Samsung EVO 250 GB
+
+BIOS A25 ( Latest 30 Oct 2018 )
+
+
+This Process has been successfully tested with High Sierra and Mojave 10.14.5
+
+                                    Step By Step
+
+1- Reset BIOS to its default and Update it to A25 
+2- Modify BIOS setting ( Press F12 to see Options ): 
+
+                       * Advanced Boot Options = Enable Legacy
+                       * Integrated NIC = Enable
+                       * Parallel Ports = AT
+                       * Seial Ports = Disabled ( If you are using Dock station then Enable it - Expermental )
+                       * Sata Opeartion = AHCI 
+                       * Drivers = Check all
+                       * Switchable Graphics = Enable Switchable Graphics
+                       * Secure Boot = Disabled 
+                       * Virtualization = Disable 
+
+3- Create your OSX Installation USB ( Search How , its not my Topic )
+   * Then I recommend to install Clover bootlader to create EFI in your USB
+4- Once you create installation USB ; mount USB EFI and DELETE EFI Folder
+5- Decompress my attached files 
+6- find ( install Folder ) ; Copy EFI and Paste it in your EFI PARTITION ( instead of deleted one in step 4)
+7- Now you are ready to Install OSX for Dell Precision M6800 
+                       * Power On your PC
+                       * Press F12 to see Options 
+                       * Select BOOT from ( your USB )
+                       * Start Installation Process ( it will reboot several time during installation so press F12           
+                         each time to boot from your USB )
+
+8- Once installation done and you reach OSX desktop ; 
+                       
+                        * Mount your OSX EFI PARTITION and delete ( EFI Folder if existed )
+                        * On my attached files Find ( Boot Disk EFI ); copy EFI and Paste it in your EFI  
+                          PARTITION instead of deleted one
+
+9- Now the last step ( very Important )
+
+   - on my attached files Find ( L/E Folder ) 
+   - use any method or tool to install ALL KEXTS to Library/Extensions 
+   - Rebuild kextcache and repair permissions 
+
+
+10- Reboot your PC and check everything is working correctly ( Audio , Bluetooth , WiFi , Internet , USB 3 ... )
+
+IF you are using Mojave ; No Cuda drivers available till now but the Nvidia GPU works with External Monitor via DP Fully Accelerated Qi-Ci , also you can Disable Bios graphics Optimus to disable Intel HD GPU and use only Nvidia GPU - The same thing with High Sierra except that Nvidia Web Drivers are available and Cuda are ready 
+
+If you face any issue with boot or GPU try to change config.plist SMBIOS to MacbookPro 10.1 or 11.2 or 13.1 and you can use iMac 14.2 as well
+
+
+Have Fun 
+
+Franckenstien -30 Jun 2019
+
+
+
