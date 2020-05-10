@@ -22,11 +22,13 @@ Specs rundown:
 
 Dell has released the M4800 with six (!) different motherboard revisions and three different displays. Why am I telling you this? Well it's what matters the most regarding it's hackintoshing-ability.
 
-As you've probably noticed, there are 3 variants of LVDS and eDP motherboards each. All the LVDS motherboards are very hackintosh-friendly and there are many instructions and success cases online, but their maximum resolution for the internal display is capped at 1920x1080. On the contrary, the eDP versions can go from Full HD to Ultra HD (aka 4K). Note that there's also a QHD+ screen available with a resolution of 3200x1200. 
+As you've probably noticed, there are 3 variants of LVDS and 4 variants of eDP motherboards. All the LVDS motherboards are very hackintosh-friendly and there are many instructions and success cases online, but their maximum resolution for the internal display is capped at 1920x1080. On the contrary, the eDP versions can go from Full HD to Ultra HD (aka 4K). Note that there's also a QHD+ screen available with a resolution of 3200x1200. 
 
-Also, according to Dell, the iGPU is not capable of driving a QHD+ or UHD panel, so if you get a laptop with the QHD+ screen (like me) or the UHD screen, the iGPU will be disabled hardware-wise and you will run into trouble since macOS doesn't detect the internal eDP port and as such no image on the internal screen will show (unless you boot with nv_disable=1). Testing hasn't been done by me on any other model as this is the only one I have.
+Also, according to Dell, the iGPU is not capable of driving a QHD+ or UHD panel, so if you get a laptop with the QHD+ screen (like me) or the UHD screen, the iGPU will be disabled hardware-wise and you will run into trouble since macOS doesn't detect the internal eDP port and as such no image on the internal screen will show (unless you boot with nv_disable=1). External monitors connected to the HDMI and DP ports do work fine. 
 
-Also, this isn't the only laptop with a Discrete GPU only (no iGPU), other examples are the ASUS ROG G750 (which was solved [here](https://www.insanelymac.com/forum/topic/293967-solved-asus-rog-laptops-with-kepler-cards-not-detecting-dp-2-connected-lcd-display/)). I believe that the Asus G75VW, HP Zbook G1/G2 and the Dell Inspiron SE 7720 suffer from the same issue.
+As I've found a schematic for my board, I've since realized that there is no MUX from the MXM Card to the eDP Screen. I've also found out that the iGPU eDP signal goes thru a eDP to LVDS converter and then a LVDS MUX before reaching the connector, hence the only signal available at the connector is LVDS (and that's why it's not "able to drive" the QHD+\UHD screens as they're eDP).
+
+This isn't the only laptop with a Discrete GPU only (no iGPU), other examples are the ASUS ROG G750 (which was solved [here](https://www.insanelymac.com/forum/topic/293967-solved-asus-rog-laptops-with-kepler-cards-not-detecting-dp-2-connected-lcd-display/)). I believe that the Asus G75VW, HP Zbook G1/G2 and the Dell Inspiron SE 7720 suffer from the same issue.
 
 So if you own one of these and want to help, PR's are welcome. If you don't own one of these but you think you may be able to help, I believe we're needing someone who actually understands DSDTs and the innards of nVidia kexts under macOS.
 
