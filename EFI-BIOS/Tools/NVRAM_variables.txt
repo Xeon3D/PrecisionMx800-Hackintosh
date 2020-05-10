@@ -1,0 +1,49 @@
+--SMI Lock, Variable: 0x74
+	Disabled, Value: 0x0 <<---
+	Enabled, Value: 0x1
+
+--BIOS Lock, Variable: 0x75
+	Disabled, Value: 0x0 <<---
+	Enabled, Value: 0x1
+	
+--BIOS Interface Lock, Variable: 0x77
+	Disabled, Value: 0x0 <<---
+	Enabled, Value: 0x1
+	
+--CFG lock, Variable: 0xC8A
+	Disabled, Value: 0x0 <<---
+	Enabled, Value: 0x1
+	
+--Mc Lock, Variable: 0xD3F
+	Disabled, Value: 0x0 <<---
+	Enabled, Value: 0x1
+	
+--VR Current value lock, Variable: 0xC93
+	Disabled, Value: 0x0 <<---
+	Enabled, Value: 0x1
+	
+--Package power limit lock, Variable: 0xC94
+	Disabled, Value: 0x0 <<---
+	Enabled, Value: 0x1
+	
+--Overclocking lock, Variable: 0xC95
+	Disabled, Value: 0x0 <<---
+	Enabled, Value: 0x1
+	
+--Platform power limit lock, Variable: 0x54
+	Disabled, Value: 0x0 <<---
+	Enabled, Value: 0x1
+	
+--Config TDP LOCK, Variable: 0x3A
+	Disabled, Value: 0x0 <<---
+	Enabled, Value: 0x1
+	
+--ICC Locks After EOP, Variable: 0xC14 
+	Default, Value: 0x3
+	All Locked, Value: 0x4
+	All UnLocked, Value: 0x5 <<---
+	
+--Me FW Image Re-Flash, Variable: 0x2BC
+	Disabled, Value: 0x0
+	Enabled, Value: 0x1 <<---
+	
