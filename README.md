@@ -12,9 +12,9 @@ Specs rundown:
 
 - 15.6" (M4800) or 17" (M6800)
 - Motherboard models: W7R2C/THP1N/T3YTY (LVDS) & C3V2K/8KWV8/WNW0H/77KCT (eDP)
-- 5th Generation Core i5 or i7 CPU (Not soldered, hence upgradeable)
+- 4th Generation Core i5 or i7 CPU (Not soldered, hence upgradeable)
 - Up to 32GB of DDR3L RAM
-- Intel (*) HD 4000 Series iGPU + nVidia Quadro / AMD FirePro dGPU (Upgradeable MXM Type A on M4800 and Type B on M6800)
+- Intel (*) HD 4x00 Series iGPU (HD 4600) + nVidia Quadro / AMD FirePro dGPU (Upgradeable MXM Type A on M4800 and Type B on M6800)
 - Realtek ALC292 Codec
 - Intel Ethernet Connection I217-LM
 - Intel Dual Band Wireless AC 7260 + Bluetooth 4.0 (There's no Whitelist in this model, so it's upgradeable)
